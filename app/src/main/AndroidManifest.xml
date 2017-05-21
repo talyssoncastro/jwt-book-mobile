@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="br.edu.utfpr.posjava.jwtbook">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+        </activity>
+        <activity android:name=".security.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".editora.CadastroEditoraActivity">
+        </activity>
+        <activity android:name=".editora.ListaEditoraActivity">
+        </activity>
+        <activity android:name=".genero.CadastroGeneroActivity">
+        </activity>
+        <activity android:name=".genero.ListaGeneroActivity">
+        </activity>
+        <activity android:name=".livro.CadastroLivroActivity">
+        </activity>
+        <activity android:name=".livro.ListaLivroActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_livro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.edu.utfpr.posjava.jwtbook.livro.CadastroLivroActivity">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <Button
+            android:id="@+id/btExcluirLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:onClick="btExcluirLivroOnClick"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código"/>
+
+        <TextView
+            android:id="@+id/tvIdLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"/>
+
+        <EditText
+            android:id="@+id/etTituloCadastroLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ano"/>
+
+        <EditText
+            android:id="@+id/etAnoCadastroLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Páginas"/>
+
+        <EditText
+            android:id="@+id/etPaginasCadastroLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISBN"/>
+
+        <EditText
+            android:id="@+id/etISBNCadastroLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editora"/>
+
+        <Spinner
+            android:id="@+id/spEditoraCadastroLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gênero"/>
+
+        <Spinner
+            android:id="@+id/spGeneroCadastroLivro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:onClick="btSalvarLivroOnClick"/>
+
+    <!--</ScrollView>-->
+
+</LinearLayout>
